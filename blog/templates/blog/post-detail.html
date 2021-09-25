@@ -45,6 +45,9 @@
     </main>
 
     <section id="comments">
+        {% if not comments %}
+            <p>Your comment will be first!</p>
+        {% endif %}
         <ul>
             {% for comment in comments %}
                 <li>
